@@ -15,6 +15,7 @@ export const Skills: FC = () => {
               alt={skill.name}
               width={1280}
               height={852}
+              title={skill.name}
               style={{
                 width: '100%',
                 height: 'auto',
