@@ -22,7 +22,6 @@ export const linkListContainer = style({
   gridTemplateRows: 'repeat(1, 50px)',
   '@media': {
     'screen and (max-width: 768px)': {
-      gridTemplateColumns: 'repeat(5,30px)',
       gridTemplateRows: 'repeat(1, 30px)',
       gap: '25px'
     }

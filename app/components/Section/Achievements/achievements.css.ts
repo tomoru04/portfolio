@@ -72,12 +72,13 @@ export const achievementCardContainer = style({
   boxShadow: '0 4px 4px rgba(0, 0, 0, 0.1)',
   border: '1px solid #eaeaea',
   borderRadius: '10px',
-  width: '100%',
+  width: '99%',
   height: '130px',
   transition: 'box-shadow 0.1s ease-in-out',
   display: 'flex',
   ':hover': {
     boxShadow: '0 6px 8px rgba(0, 0, 0, 0.2)',
-    cursor: 'pointer'
+    cursor: 'pointer',
+    width: '90%',
   }
 })
