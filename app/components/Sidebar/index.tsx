@@ -1,5 +1,6 @@
 'use client'
 import { FC } from 'react'
+import Link from 'next/link'
 import * as styles from './sidebar.css'
 import { NavigationItems } from '../NavigationItems'
 
@@ -7,9 +8,9 @@ export const Sidebar: FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.profile}>
-        <a href='/' className={styles.name}>
+        <Link href='/' className={styles.name}>
           Tomoya Shoda
-        </a>
+        </Link>
       </div>
       <NavigationItems />
     </div>
