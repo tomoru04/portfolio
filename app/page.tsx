@@ -8,12 +8,12 @@ import { SECTION_LIST } from '@/constants'
 import { Bio } from './components/Section/Bio'
 import { Links } from './components/Section/Links'
 import { Achievements } from './components/Section/Achievements'
-import { useAchievementsData } from './hooks/useAchievementsData.ts'
+import { getAchievementsData } from './hooks/getAchievementsData'
 
 export default async function Home() {
   // console.log(styles.pink)
 
-  const { achievementsData } = await useAchievementsData()
+  const { achievementsData } = await getAchievementsData()
   return (
     <div className={styles.container}>
       <div className={styles.sidebarContainer}>
