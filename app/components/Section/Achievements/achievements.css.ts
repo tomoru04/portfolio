@@ -79,6 +79,6 @@ export const achievementCardContainer = style({
   ':hover': {
     boxShadow: '0 6px 8px rgba(0, 0, 0, 0.2)',
     cursor: 'pointer',
-    width: '90%',
+    width: '90%'
   }
 })
