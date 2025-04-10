@@ -31,14 +31,6 @@ export const SECTION_LIST = {
 
 export const SKILL_LIST = [
   {
-    name: 'TypeScript',
-    image: '/skills/typescript-icon.svg'
-  },
-  {
-    name: 'JavaScript',
-    image: '/skills/javascript.svg'
-  },
-  {
     name: 'C',
     image: '/skills/c.png'
   },
@@ -55,12 +47,16 @@ export const SKILL_LIST = [
     image: '/skills/python.png'
   },
   {
-    name: 'Next.js',
-    image: '/skills/nextjs-icon.svg'
+    name: 'TypeScript',
+    image: '/skills/typescript-icon.svg'
   },
   {
     name: 'React',
     image: '/skills/react.svg'
+  },
+  {
+    name: 'Next.js',
+    image: '/skills/nextjs-icon.svg'
   },
   {
     name: 'Lambda',
@@ -73,6 +69,10 @@ export const SKILL_LIST = [
   {
     name: 'Docker',
     image: '/skills/docker.png'
+  },
+  {
+    name: 'GitHub',
+    image: '/skills/github-logo.svg'
   },
   {
     name: 'Unity',
