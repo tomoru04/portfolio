@@ -5,12 +5,14 @@ export const container = style({
   display: 'flex',
   flexDirection: 'column',
   margin: '0 auto',
-  padding: '120px 60px'
+  padding: '0px 60px',
+  height: '100%',
 })
 
 export const profile = style({
   display: 'flex',
-  flexDirection: 'column'
+  flexDirection: 'column',
+  padding: '120px 0px 0px 0px',
 })
 
 export const name = style({
@@ -32,4 +34,9 @@ export const navigation = style({
   flexDirection: 'column',
   padding: 0,
   rowGap: '24px'
+})
+
+export const copyrights = style({
+  marginTop: 'auto',
+  marginBottom: '30px'
 })

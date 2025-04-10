@@ -13,6 +13,7 @@ export const Sidebar: FC = () => {
         </Link>
       </div>
       <NavigationItems />
+      <p className={styles.copyrights}>© 2025 Tomoya Shoda. All rights reserved.</p>
     </div>
   )
 }
