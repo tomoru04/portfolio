@@ -1,3 +1,5 @@
+"use client";
+
 import { FC } from 'react'
 import Image from 'next/image'
 import profileImage from '@/public/profile.png'
