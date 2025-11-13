@@ -1,25 +1,17 @@
 "use client";
 
 import React, { FC, ReactNode } from 'react'
-"use client";
-
-import React, { FC, ReactNode } from 'react'
 import * as styles from './bio.css'
 import {useTranslations} from 'next-intl';
 
 const TimelineEntry: FC<{ title: string; period: string; description: ReactNode }> = ({
-import {useTranslations} from 'next-intl';
-
-const TimelineEntry: FC<{ title: string; period: string; description: ReactNode }> = ({
   title,
-  period,
   period,
   description
 }) => (
   <div className={styles.timelineContainer}>
     <div className={styles.timeline}>
       <p className={styles.timelineContentTitle}>{title}</p>
-      <p className={styles.timelineContentPeriod}>{period}</p>
       <p className={styles.timelineContentPeriod}>{period}</p>
       <p className={styles.timelineContentDescription}>{description}</p>
     </div>
@@ -41,7 +33,6 @@ export const Bio: FC = () => {
         <TimelineEntry
           key={index}
           title={entry.title}
-          period={entry.period}
           period={entry.period}
           description={entry.description}
         />
