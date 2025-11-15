@@ -1,5 +1,34 @@
 {
   "About": {
-    "profile": "Hola"
+    "profile": "Born April 17, 2000<br></br>From Nerima-ku, Tokyo<br></br><br></br>Second-year master's student in Information Engineering at Chuo University Graduate School.<br></br>I have a bit of experience in backend and frontend development.<br></br><br></br>During my undergraduate years, I was passionate about team-based game development.<br></br>My research focuses on the field of medical engineering.<br></br><br></br>Hobbies: Karaoke, Valorant, Hiking (beginner)<br></br>Qualifications: Applied Information Technology Engineer Exam"
+  },
+  "Bio": {
+    "timeline": {
+      "event0": {
+        "title": "Business Efficiency Improvement in a Non-IT Company",
+        "period": "2024.12–2025.3",
+        "description": "・Automated detailed tasks of the sales department<br></br>・Tech stack: Python / GAS"
+      },
+      "event1": {
+        "title": "Research & Web Production",
+        "period": "2023.12–",
+        "description": "・Research in the field of medical engineering<br></br>・Commissioned and maintained some LP products<br></br>・Tech stack: C / FFmpeg / Next.js / TypeScript"
+      },
+      "event2": {
+        "title": "FE/BE Development at a Startup Company",
+        "period": "2023.8–12",
+        "description": "・Developed a serverless architecture sales DX product<br></br>・Handled both frontend and backend<br></br>・Tech stack: Next.js / TypeScript / Python / MySQL / Docker / AWS"
+      },
+      "event3": {
+        "title": "Game Development",
+        "period": "2022.4–2023.8",
+        "description": "・Experienced multiple months-long random team game development projects<br></br>・Won the Grand Prize in a university game competition with a 1,000,000 yen award<br></br>・Tech stack: Unity / C# / Blender / Azure Kinect"
+      },
+      "event4": {
+        "title": "Competitive Programming",
+        "period": "2021.6–",
+        "description": "・Ranked Light Blue in AtCoder, reflecting abilities that exceed what most IT companies expect<br></br>・Qualified for the final of the ICPC (International Collegiate Programming Contest)<br></br>・Tech stack: C++"
+      }
+    }
   }
 }
