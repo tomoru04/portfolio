@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 import { createVanillaExtractPlugin } from '@vanilla-extract/next-plugin';
+import createNextIntlPlugin from 'next-intl/plugin';
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -31,4 +32,5 @@ const nextConfig: NextConfig = {
   }
 };
 
-export default createVanillaExtractPlugin()(nextConfig);
+const withNextIntl = createNextIntlPlugin();
+export default withNextIntl(createVanillaExtractPlugin()(nextConfig));

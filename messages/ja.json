@@ -1,0 +1,35 @@
+{
+  "Language": "ja",
+  "About": {
+    "profile": "2000年4月17日生まれ<br></br>東京都練馬区出身<br></br><br></br>中央大学大学院理工学研究科情報工学専攻2年生です。<br></br>バックエンドとフロントエンドの開発経験がちょっとあります。<br></br><br></br>大学時代はゲームのチーム開発に熱中していました。<br></br>研究では医用工学の分野に注力しています。<br></br><br></br>趣味: カラオケ・Valorant・登山(初心者)<br></br>保有資格: 応用情報技術者試験"
+  },
+  "Bio": {
+    "timeline": {
+      "event0": {
+        "title": "一般企業の業務効率化",
+        "period": "2024.12～2025.3",
+        "description": "・営業部の細かいタスクを自動化<br></br>・技術スタック: Python / GAS"
+      },
+      "event1": {
+        "title": "研究・Web制作",
+        "period": "2023.12〜",
+        "description": "・医用工学分野における研究<br></br>・LP制作の業務委託<br></br>・技術スタック: C / FFmpeg / Next.js / TypeScript"
+      },
+      "event2": {
+        "title": "スタートアップ企業にてFE/BE開発",
+        "period": "2023.8〜12",
+        "description": "・サーバレスアーキテクチャの営業DXプロダクトを開発<br></br>・フロントエンド、バックエンドを担当<br></br>・技術スタック: Next.js / TypeScript / Python / MySQL / Docker / AWS"
+      },
+      "event3": {
+        "title": "ゲーム開発",
+        "period": "2022.4〜2023.8",
+        "description": "・数か月間に渡るランダムチームでのゲーム開発を複数回経験<br></br>・賞金100万円の大学対抗ゲーム大会にてグランプリを受賞<br></br>・技術スタック: Unity / C# / blender / Azure Kinect"
+      },
+      "event4": {
+        "title": "競技プログラミング",
+        "period": "2021.6〜",
+        "description": "・AtCoder水色帯<br></br>・国際大学対抗プログラミングコンテスト(ICPC)国内予選通過<br></br>・技術スタック: C++"
+      }
+    }
+  }
+}

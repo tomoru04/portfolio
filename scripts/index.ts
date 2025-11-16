@@ -12,9 +12,9 @@ export type AchievementsData = {
   title?: string
   link?: string
   image?: string
-  content?: string
   isoDate: string
   eventDate: string
+  language: string
 }
 
 const fetchNotionData = async (): Promise<{ notion: AchievementsData[] }> => {
@@ -34,10 +34,10 @@ const fetchNotionData = async (): Promise<{ notion: AchievementsData[] }> => {
       favicon: NOTION_FAVICON_URL,
       title: item.properties.Name.title[0].plain_text ?? undefined,
       link: link ?? undefined,
-      content: undefined,
       image: item.properties.Thumnail.files[0]?.file.url ?? undefined,
       isoDate: item.created_time ?? undefined,
       eventDate: item.properties.EventDate.date.start ?? undefined,
+      language: item.properties.Language.select.name ?? undefined,
     }
   })
   return {

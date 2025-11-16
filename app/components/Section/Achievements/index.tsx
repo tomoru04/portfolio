@@ -1,5 +1,7 @@
 'use client'
+
 import { FC } from 'react'
+import { useLocale } from 'next-intl'
 import * as Tabs from '@radix-ui/react-tabs'
 import * as styles from './achievements.css'
 import { AchievementCard } from './AchievementCard'
@@ -15,8 +17,12 @@ type AchievementsProps = {
 }
 
 export const Achievements: FC<AchievementsProps> = ({ achievementsData }) => {
-  achievementsData['notion'].sort((a, b) => b.eventDate > a.eventDate ?  1 : -1)
-  
+  const locale = useLocale()
+
+  const sortedAchievements = [...achievementsData['notion']]
+    .filter(i => i.language === locale)
+    .sort((a, b) => b.eventDate > a.eventDate ?  1 : -1)
+
   return (
     <Tabs.Root defaultValue='book' className={styles.root}>
       <Tabs.List className={styles.tabList}>
@@ -26,7 +32,7 @@ export const Achievements: FC<AchievementsProps> = ({ achievementsData }) => {
       </Tabs.List>
       <Tabs.Content value='book'>
         <ul className={styles.achievementCardLinkContainers}>
-          {achievementsData['notion'].map((i, index) => (
+          {sortedAchievements.map((i, index) => (
             <li key={i.link + String(index)} className={styles.achievementCardContainer}>
               <AchievementCard
                 title={i.title ?? 'no title'}

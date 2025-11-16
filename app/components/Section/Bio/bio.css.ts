@@ -53,7 +53,7 @@ export const timelineContentTitle = style({
   }
 })
 
-export const timelineContentDate = style({
+export const timelineContentPeriod = style({
   fontSize: vars.fontSize.base,
   color: vars.color.primary,
   margin: '0px',
