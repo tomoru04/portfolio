@@ -1,19 +1,18 @@
-import { Sidebar } from './components/Sidebar'
-import { MobileHeader } from './components/MobileHeader'
+import { Sidebar } from '../components/Sidebar'
+import { MobileHeader } from '../components/MobileHeader'
 import * as styles from './page.css'
-import { Section } from './components/Section'
-import { About } from './components/Section/About'
-import { Skills } from './components/Section/Skills'
+import { Section } from '../components/Section'
+import { About } from '../components/Section/About'
+import { Skills } from '../components/Section/Skills'
 import { SECTION_LIST } from '@/constants'
-import { Bio } from './components/Section/Bio'
-import { Links } from './components/Section/Links'
-import { Achievements } from './components/Section/Achievements'
-import { getAchievementsData } from './hooks/getAchievementsData'
+import { Bio } from '../components/Section/Bio'
+import { Links } from '../components/Section/Links'
+import { Achievements } from '../components/Section/Achievements'
+import { getAchievementsData } from '../hooks/getAchievementsData'
 
 export default async function Home() {
-  // console.log(styles.pink)
+  const { achievementsData } = await getAchievementsData();
 
-  const { achievementsData } = await getAchievementsData()
   return (
     <div className={styles.container}>
       <div className={styles.sidebarContainer}>
