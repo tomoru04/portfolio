@@ -9,6 +9,7 @@ import { AchievementsData } from '@/scripts/index'
 import dayjs from 'dayjs'
 import timezone from 'dayjs/plugin/timezone'
 import utc from 'dayjs/plugin/utc'
+import {useTranslations} from 'next-intl'
 dayjs.extend(utc)
 dayjs.extend(timezone)
 
@@ -18,6 +19,7 @@ type AchievementsProps = {
 
 export const Achievements: FC<AchievementsProps> = ({ achievementsData }) => {
   const locale = useLocale()
+  const t = useTranslations('Achievements')
 
   const sortedAchievements = [...achievementsData['notion']]
     .filter(i => i.language === locale)
@@ -27,7 +29,7 @@ export const Achievements: FC<AchievementsProps> = ({ achievementsData }) => {
     <Tabs.Root defaultValue='book' className={styles.root}>
       <Tabs.List className={styles.tabList}>
         <Tabs.Trigger value='book' className={styles.tabTrigger}>
-          実績
+          {t("title")}
         </Tabs.Trigger>
       </Tabs.List>
       <Tabs.Content value='book'>
