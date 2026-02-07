@@ -24,7 +24,7 @@ export const About: FC = () => {
         <div className={styles.introductionContainer}>
           <p>
             {t.rich('profile', {
-              br: (chunks) => <br/>
+              br: () => <br/>
             })}
           </p>
         </div>
